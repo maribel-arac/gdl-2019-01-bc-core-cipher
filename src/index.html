@@ -4,11 +4,45 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontello.css"> <!-- esta es la carpeta que jala los iconos -->
   </head>
   <body>
-    <div id="root">
-      <h1>Hola mundo!</h1>
-    </div>
+   <!-- Welcome page -->
+  <div id="home">
+    <header>
+      <h2 class="icon-key">Bienvenido a Cypher</h2>
+      <img src="https://www.cloudseguro.co/wp-content/uploads/2015/03/f.jpg">
+    </header>
+
+    <!-- Ingresar nombre -->
+          <input type="name" id="name-form" placeholder="Nombre" name="name-form" required> 
+        <div>
+          <button id="btnName" type="submit">Go</button>
+        </div>
+  </div>
+
+  <!-- first page-->
+
+  <section id="screen1">
+    <h1> ¡Hola!</h1>
+    <h2>¿Qué quieres hacer con tu mensaje?</h2>
+
+     <!-- Botón de cifrar -->
+        <div id="cifrar">
+          <button id="encodeBtn" type="submit"><img id="images" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png"></button>
+          <h3> Cifrar</h3>
+
+        </div>
+
+     <!-- Botón de descifrar -->
+        <div id="descifrar">
+          <button id="decodeBtn" type="submit"><img id="images" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg"></button> <h3>Descifrar</h3>
+
+        </div>
+        </section>
+
+
+  </section>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body>
