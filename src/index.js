@@ -32,6 +32,25 @@ function switchVisibility(div1, div2){
  }
 }
 
+
+//para que los botones funcionen
+document.getElementById('btnName').addEventListener("click", ); //llamar a la funcion a la que te va a mandar
+
+
+
+
+
+
+//ya hecho, basate en este para los demas botones 
+document.getElementById('encodeAgain').addEventListener("click", code); //el amarillo es el ID del boton
+
+function code(){ //es la funcion para cambio de pantallas
+	chosen = 'encodeAgain'
+	display('encodeScreen')
+};
+
+
+
 //al darle click, recupera el nombre y saluda
 function getName(){
 	const nameInput = document.getElementById('name-form').value; //jala lo que se ingresa en el espacio de nombre
@@ -39,5 +58,3 @@ function getName(){
 	let  greeting = "Hola " + nameInput + " ¿Qué quieres hacer con tu mensaje?";
 	document.getElementById("greeting").innerHTML = greeting;
 }
-
-

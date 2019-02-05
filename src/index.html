@@ -53,7 +53,7 @@
   <p> Escribe tu mensaje en MAYÚSCULAS para cifrarlo <em> (no incluir ñ, números, ni caracteres especiales):</em></p>
   <input type="text" name="" autocapitalize="sentences">
 
-  <h2> ¿Cuántos caracteres deseas recorrer?</h2>
+  <p> ¿Cuántos caracteres deseas recorrer?</p>
   <input type="" name="">
   <button id="next" type="submit" onclick="switchVisibility('encodeScreen', 'resultsTxt')">Siguiente</button>
 
@@ -63,7 +63,7 @@
    <p> Este es tu mensaje cifrado <br>
    con un número de desplazamiento de ¿?¿?¿ </p>
 
-<button id="encodeAgain" type="submit" onclick="switchVisibility('resultsTxt', 'encodeScreen')"> Cifrar otro mensaje</button>
+<button id="encodeAgain" type="submit"> Cifrar otro mensaje</button>
 
 <button id="exit" type="submit" onclick="switchVisibility('resultsTxt', 'home')">Inicio</button>
 </div>
@@ -75,7 +75,7 @@
   <input type="text" id="message" name="">
 
   <p> Descifrar a ?¿?¿ </p>
-  <input type="" name="">
+  <input type="number" name="">
 
   <button id="next" type="submit" onclick="switchVisibility('decodeScreen','results')">Siguiente</button>
 
