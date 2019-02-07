@@ -1,60 +1,35 @@
-//prender y apagar pantallas
-function restart(){
-	document.getElementById("screen1").style.display = 'none';
-	document.getElementById("encodeScreen").style.display = 'none';
-	document.getElementById("decodeScreen").style.display = 'none';
-	document.getElementById("resultsTxt").style.display = 'none';
-	document.getElementById("results").style.display = 'none';
+//funcion para cambio de pantallas
+function changingSlides() {
+	document.getElementById("home").style.display = "none"; //darle invisibilidad
+	document.getElementById("inputInfo").style.display = "block"; //mostrar el bloque (pantalla/slide)
+}
+	document.getElementById('btnGo').addEventListener('click', changingSlides); //da click en vamos y manda a pantallaDOS
+
+//el boton 'cifrar' funciona al ingresar el mensaje
+function encodeBtn(){
+	let offsetInput = Number(document.getElementById('offset').value); //se guarda el offset que ingresa el usuario
+	let textInput = document.getElementById('word').value; //se guarda el msj que ingresa el usuario
+	let fusion = window.cipher.encode(offsetInput, textInput); //llama la funcion de 'encode' del cipher.js y tmb al offset y texto que ingreso el user
+	document.getElementById('text').innerHTML= (fusion); //imprime en el textarea el texto ya cifrado para que lo vea el usuario
 }
 
-restart();
+	document.getElementById('encodeBtn').addEventListener('click',encodeBtn); //al darle click, ejecuta la funcion del boton 'encodeBtn'
 
 
-//Función para "cambiar" de ventanas
-function switchVisibility(div1, div2){
- let divElement = document.getElementById(div1);
- let divElement2 = document.getElementById(div2);
-
- //Ocultando la division del inicio
- if(divElement.style.display == 'none'){
-   divElement.style.display = 'block';
- }
- else {
-   divElement.style.display = 'none';
- }
-
- //Mostrando la division del menu
- if(divElement2.style.display == 'none'){
-   divElement2.style.display = 'block';
- }
- else {
-   divElement2.style.display = 'none';
- }
+//boton 'descifrar' funciona
+function decodeBtn(){
+	let offsetInput = document.getElementById('offset').value; //se guarda el offset que ingresa el usuario
+	let textInput = document.getElementById('word').value; //se guarda el msj que ingresa el usuario
+	let fusion = window.cipher.decode(offsetInput, textInput); //llama a la funcion de 'decode' del cipher.js y tmb al offset y texto que ingreso el user
+	document.getElementById('text').innerHTML= (fusion); //imprime en el textarea el texto ya descifrado para que lo vea el user
 }
 
-
-//para que los botones funcionen
-document.getElementById('btnName').addEventListener("click", ); //llamar a la funcion a la que te va a mandar
+	document.getElementById('decodeBtn').addEventListener('click', decodeBtn); // al darle click, ejecuta la funcion del boton'decodeBtn'
 
 
-
-
-
-
-//ya hecho, basate en este para los demas botones 
-document.getElementById('encodeAgain').addEventListener("click", code); //el amarillo es el ID del boton
-
-function code(){ //es la funcion para cambio de pantallas
-	chosen = 'encodeAgain'
-	display('encodeScreen')
-};
-
-
-
-//al darle click, recupera el nombre y saluda
-function getName(){
-	const nameInput = document.getElementById('name-form').value; //jala lo que se ingresa en el espacio de nombre
-	console.log(nameInput);
-	let  greeting = "Hola " + nameInput + " ¿Qué quieres hacer con tu mensaje?";
-	document.getElementById("greeting").innerHTML = greeting;
+//boton 'volver'
+function comeBack(){
+	document.getElementById("inputInfo").style.display = "none";
+	document.getElementById("home").style.display = "block";
 }
+document.getElementById('goBack').addEventListener('click', comeBack);

@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+body {
+font-family: 'Source Sans Pro', sans-serif;
+}
+
 #background{
 	z-index: -1;
 	position: absolute;
@@ -7,13 +13,20 @@
 	height: 100%;
 	opacity: 0.8;
 }
+
+.container {
+	display: flex;
+	justify-content: center;
+	text-align: vertical; /* checar que las palabras 'cifrar/descifrar' queden abajo de la imagen*/
+	align-items: center;
+}
+
 #images {
 	width: 100px;
 	height: 100px;
-	display: inline-block;
-	position: relative;
+
 }
 
-h1,h3,li {
+h1,li, p, h3 {
 	color: white;
 }

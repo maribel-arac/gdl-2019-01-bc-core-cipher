@@ -7,9 +7,10 @@
   </head>
   <body>
     <img id="background" src="http://wallpoper.com/images/00/31/33/51/black-background_00313351.jpg" alt="">
-     <!-- Welcome page -->
+     
+<!-- Welcome page  pantallaUNO-->
   <div id="home">
-      <h1 class="icon-key">CYPHER</h1>
+    <h1 class="icon-key">SAFETY BOX</h1>
 
   <p> El cifrado César es uno de los primeros métodos de cifrado conocidos. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.</p>
 
@@ -19,76 +20,116 @@
     <li> Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</li>
     <li>Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C</li>
 
-    <p>Ahora que sabes como funciona, ingresa tu nombre y comencemos!!</p>
 
-
-<!-- Ingresar nombre -->
- <input type="name" id="name-form" placeholder="Nombre" name="name-form" required>
-
-<!-- Botón de enviar -->
+    <!-- Botón de enviar -->
         <div>
-          <button id="btnName" type="submit" onclick="switchVisibility('home', 'screen1'); getName();">Vamos</button>
+          <button id="btnGo" type="submit">Vamos</button>
+        </div>
+
+  </div>
+
+
+  <!--intento 1  pantallaDOS-->
+  <div id="inputInfo" hidden>
+    <h1>ESCRIBE TODO EN MAYUSCULAS, SIN INCLUIR Ñ NI CARACTERES ESPECIALES</h1>
+    <p>¿Cuántos desplazamientos (offset) deseas recorrer? <input type="number" id="offset"> </p>
+    <p> QUERIDO DIARIO:<input type="text" id="word" placeholder="mensaje" required=""></p>
+    <!-- <p> Titular de la tarjeta:<input type="text" id="userName" placeholder="Nombre" required=""></p>
+    <p> Nombre del banco:<input type="text" id="bank" required=""></p>
+    <p> RFC: <input type="text" id="rfc" placeholder="RFC" required=""> </p>
+    <p>Número de seguro:<input type="text" id="imss" placeholder="IMSS/ISSSTE" required=""> </p> -->
+
+
+      <!--aqui muestra el resultado-->
+        <textarea id="text" rows="6" cols="60">
+
+        </textarea>
+
+
+      <!-- botones de cifrar y descifrar -->
+      <div id="buttons" class="container">
+
+          <!-- boton cifrar-->
+          <button id="encodeBtn" type="submit"><img id="images" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png"></button><h2>Cifrar</h2>
+
+
+        <!-- Botón descifrar -->
+          <button id="decodeBtn" type="submit"><img id="images" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg"></button><h2>Descifrar</h2> 
+      </div>
+
+      <button id="goBack" type="submit">Volver</button>
+
+  </div>
+
+<!-- INTENTO 2 
+Ingresar nombre
+ <input type="name" id="name-form" placeholder="Nombre" name="name-form" required> -->
+
+<!-- Botón de enviar  
+        <div>
+          <button id="btnName" type="submit";">Vamos</button>
         </div>
         </section>
   </section>
-</div>
+</div> -->
 
-<!--pantalla 1 -->
+
+<!--pantalla 1 
   <div id="screen1">
 
     <p id="greeting"></p>
-  <!--Boton de cifrar -->
+
+  Boton de cifrar
      <div id="encode">
-          <button id="encodeBtn" type="submit" onclick="switchVisibility('screen1', 'encodeScreen')"><img id="images" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png"></button> <h3>Cifrar</h3>
+          <button id="encodeBtn" type="submit"><img id="images" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png"></button> <h3>Cifrar</h3>
       </div>
 
-      <!-- Botón de descifrar -->
+      Botón de descifrar 
         <div id="decode">
-          <button id="decodeBtn" type="submit" onclick="switchVisibility('screen1', 'decodeScreen')"><img id="images" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg"></button><h3>Descifrar</h3>
+          <button id="decodeBtn" type="submit"><img id="images" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg"></button><h3>Descifrar</h3>
         </div>
   </div>
 
-<!-- al darle click en 'cifrar', te manda a esta pantalla -->
+al darle click en 'cifrar', te manda a esta pantalla 
 <div id="encodeScreen">
   <p> Escribe tu mensaje en MAYÚSCULAS para cifrarlo <em> (no incluir ñ, números, ni caracteres especiales):</em></p>
-  <input type="text" name="" autocapitalize="sentences">
+  <input type="text" name="" placeholder='Mensaje' autocapitalize="sentences">
 
   <p> ¿Cuántos caracteres deseas recorrer?</p>
-  <input type="" name="">
-  <button id="next" type="submit" onclick="switchVisibility('encodeScreen', 'resultsTxt')">Siguiente</button>
+  <input type="number" name="">
+  <button id="next" type="submit">Siguiente</button>
 
 </div>
-<!-- la pantalla con el mensaje cifrado-->
+la pantalla con el mensaje cifrado
 <div id="resultsTxt">
-   <p> Este es tu mensaje cifrado <br>
-   con un número de desplazamiento de ¿?¿?¿ </p>
+   <p> Este es tu mensaje cifrado </p>
 
 <button id="encodeAgain" type="submit"> Cifrar otro mensaje</button>
 
-<button id="exit" type="submit" onclick="switchVisibility('resultsTxt', 'home')">Inicio</button>
+<button id="exit" type="submit"">Inicio</button>
 </div>
 
 
-<!--al darle al click en 'descifrar', te manda a esta pantalla -->
+al darle al click en 'descifrar', te manda a esta pantalla
 <div id="decodeScreen">
   <p>Escribe tu mensaje para descifrarlo:</p>
-  <input type="text" id="message" name="">
+  <input type="text" id="message" placeholder="Mensaje" name="">
 
-  <p> Descifrar a ?¿?¿ </p>
+  <p> Descifrar a </p>
   <input type="number" name="">
 
-  <button id="next" type="submit" onclick="switchVisibility('decodeScreen','results')">Siguiente</button>
+  <button id="next" type="submit">Siguiente</button>
 
 </div>
 
-<!-- Muestra el mensaje DESCIFRADO-->
+Muestra el mensaje DESCIFRADO
 <div id="results">
    <p> Tu mensaje dice: </p>
-<button id="decodeBtn" type="submit" onclick="switchVisibility('decodeScreen', 'results')"> Descifrar otro mensaje</button>
-<button id="exit1" type="submit" onclick="switchVisibility('decodeScreen', 'home')">Inicio</button>
+<button id="decodeBtn" type="submit"> Descifrar otro mensaje</button>
+<button id="exit1" type="submit">Inicio</button>
 </div>
 
-</div>
+</div> -->
  
     <script src="cipher.js"></script>
     <script src="index.js"></script>
