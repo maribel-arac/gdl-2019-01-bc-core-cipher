@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+
+h1{
+	font-family: 'Shadows Into Light', cursive;
+	text-align: center;
+	font-size: 98px;
+}
+
+p,li, h3, h2 {
+	font-size: 26px;
+	padding-left: 148px;
+}
+
+h4 {
+	font-size: 50px;
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
 
 body {
 font-family: 'Source Sans Pro', sans-serif;
@@ -11,22 +29,38 @@ font-family: 'Source Sans Pro', sans-serif;
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	opacity: 0.8;
+	opacity: 0.3;
 }
 
-.container {
+#offset {
+	width: 5%;
+	height: 5%;
+}
+
+#word {
+	width: 20%;
+	height: 50%;
+}
+
+.buttons, #buttons {
 	display: flex;
 	justify-content: center;
-	text-align: vertical; /* checar que las palabras 'cifrar/descifrar' queden abajo de la imagen*/
-	align-items: center;
 }
 
-#images {
-	width: 100px;
+
+#image1, #image2 {
+	width: 25px;
+	height: 25px;
+}
+
+
+#word, #text {
+	width: 50%;
+	height: 80%;
+}
+
+#text {
+	width: 200px;
 	height: 100px;
-
 }
 
-h1,li, p, h3 {
-	color: white;
-}

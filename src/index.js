@@ -5,6 +5,15 @@ function changingSlides() {
 }
 	document.getElementById('btnGo').addEventListener('click', changingSlides); //da click en vamos y manda a pantallaDOS
 
+//funcion para limpiar los inputs
+function clear(){
+	document.getElementById("offset").value=""; // con el id del input
+	document.getElementById("word").value="";
+	document.getElementById("text").value="";
+}
+	document.getElementById('clearBtn').addEventListener('click',clear); //al darle click, borra todo lo ingresado
+
+
 //el boton 'cifrar' funciona al ingresar el mensaje
 function encodeBtn(){
 	let offsetInput = Number(document.getElementById('offset').value); //se guarda el offset que ingresa el usuario
