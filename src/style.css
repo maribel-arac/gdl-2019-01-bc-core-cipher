@@ -114,11 +114,12 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 #word {
-	width: 50%;
-	height: 50%;
+	width: 30%;
+	height: 30%;
 	font-size: 15px;
 	bottom: 20%;
 	position: absolute;
+	padding-left: 185px;
 }
 
 #text {
