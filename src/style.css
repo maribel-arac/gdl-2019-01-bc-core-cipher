@@ -63,6 +63,8 @@ font-family: 'Source Sans Pro', sans-serif;
 	width: 20%;
 	height: 50%;
 	font-size: 15px;
+	bottom: 20%;
+	position: absolute;
 }
 
 .buttons {
@@ -115,13 +117,6 @@ font-family: 'Source Sans Pro', sans-serif;
 #encodeBtn, #decodeBtn {
 	border: 1px dotted black;
 	border-radius: 25px;
-}
-
-#word {
-	width: 200px;
-	height: 50px;
-	position: absolute;
-	bottom: 20%;
 }
 
 #text {
