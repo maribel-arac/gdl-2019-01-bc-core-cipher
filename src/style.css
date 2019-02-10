@@ -1,26 +1,43 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 @import url('https://fonts.googleapis.com/css?family=Shadows+Into+Light');
+@import url('https://fonts.googleapis.com/css?family=Neucha');
 
 h1{
 	font-family: 'Shadows Into Light', cursive;
 	text-align: center;
-	font-size: 98px;
+	font-size: 95px;
+	color: #E65C46;
 }
 
-p,li, h3, h2 {
-	font-size: 26px;
+h3, h2 {
+	font-size: 23px;
+	font-style: oblique;
 	padding-left: 148px;
 }
 
-h3 {
-	font-style: oblique;
-	color: 
+p, li {
+	font-family: 'Neucha', cursive;
+	color: #0455B6;
+	font-size: 24px;
+	padding-left: 148px;
 }
 
+
 h4 {
-	font-size: 50px;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 57px;
 	text-align: center;
+	color: #E65C46;
+	font-family: 'Neucha', cursive;
+}
+
+h5 {
+	font-family: 'Neucha', cursive;
+	color: #0455B6;
+	font-size: 35px;
+	padding-left: 148px;
+}
+.size {
+	width: 30px;
 }
 
 body {
@@ -39,12 +56,14 @@ font-family: 'Source Sans Pro', sans-serif;
 
 #offset {
 	width: 5%;
-	height: 5%;
+	height: 10%;
+	font-size: 18px;
 }
 
 #word {
 	width: 20%;
 	height: 50%;
+	font-size: 15px;
 }
 
 .buttons {
@@ -53,28 +72,34 @@ font-family: 'Source Sans Pro', sans-serif;
 
 #btnGo{
 	position: absolute;
-	bottom: 5px;
+	bottom: 1px;
 	right: 60px;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 22px;
-	background-color: #F7F8B4;
+	background-color: #F1F518;
 	border: 1px dotted black;
+	border-radius: 25px;
 }
 
 #clearBtn {
 	position: absolute;
-	bottom: 45px;
+	bottom: 60px;
 	right: 60px;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 22px;
-	background-color: #F7F8B4;
+	background-color: #F1F518;
 	border: 1px dotted black;
+	border-radius: 25px;
 }
 #goBack {
 	position: absolute;
-	bottom: 45px;
-	left: 160px;
+	bottom: 60px;
+	left: 170px;
+	font-family: 'Shadows Into Light', cursive;
 	font-size: 22px;
-	background-color: #D4F6AE;
+	background-color: #37C104;
 	border: 1px dotted black;
+	border-radius: 25px;
 }
 
 #image1, #image2{
@@ -86,6 +111,11 @@ font-family: 'Source Sans Pro', sans-serif;
 	position: absolute;
 	left: 45%;
 	top: 75%;
+}
+
+#encodeBtn, #decodeBtn {
+	border: 1px dotted black;
+	border-radius: 25px;
 }
 
 #word {
@@ -101,6 +131,7 @@ font-family: 'Source Sans Pro', sans-serif;
 	position: absolute;
 	left: 50%;
 	bottom: 27%;
+	font-size: 15px;
 }
 
 .clearBtn {
