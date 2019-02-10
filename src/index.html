@@ -13,7 +13,7 @@
   <div id="home">
     <h1 class="icon-key">Secret box</h1>
 
-  <p> El cifrado César es uno de los primeros métodos de cifrado conocidos. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.</p> <br>
+  <p> ¿Estás cansado de que lean tu diario?😒 No te preocupes! Ahora puedes escribirlo sin que se enteren de tu vida personal😉. Es muy sencillo, lo primero que necesitas es ingresar cuantos desplazamientos (offset) quieres recorrer cada letra y listo! 😌 </p>
 
     <h2>Por ejemplo, si usamos un desplazamiento (offset) de <em>3 posiciones:</em></h2>
     <li>La letra A se cifra como D.</li>
@@ -32,9 +32,11 @@
   <!-- pantallaDOS-->
   <div id="inputInfo" hidden>
     <h4>¿Qué quieres hacer con tu mensaje?</h4>
-    <h3>Escribe tu texto en mayúsculas sin usar ñ ni caracteres especiales</h3>
+    <h3> Recuerda de escribir tu texto en MAYÚSCULAS sin usar Ñ ni caracteres especiales.</h3>
     <p>¿Cuántos desplazamientos (offset) deseas recorrer? <input type="number" id="offset"> </p>
-    <p> QUERIDO DIARIO:<input type="text" id="word" placeholder="Mensaje" required=""></p>
+    <p> QUERIDO DIARIO:
+    <textarea placeholder="Ingresa aquí tu mensaje..." id="word" rows="4" cols="40">
+    </textarea></p>
 
 
       <!--aqui muestra el resultado-->
@@ -44,17 +46,17 @@
 
 
       <!-- botones de cifrar y descifrar -->
-      <div id="buttons" class="button">
+      <div id="btns">
 
           <!-- boton cifrar-->
-          <button id="encodeBtn" type="submit"><img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png"></button>
+          <button id="encodeBtn" type="submit"><img id="image1" src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Lock_PD.png" alt="cifrar"></button>
 
 
         <!-- Botón descifrar -->
-          <button id="decodeBtn" type="submit"><img id="image2" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg"></button> 
+          <button id="decodeBtn" type="submit"><img id="image2" src="https://png.pngtree.com/element_origin_min_pic/16/10/10/1057fafe51e827c.jpg" alt="descifrar"></button> 
       </div>
 
-      <div id="lastBtns">
+      <div id="lastBtns" class="lastBtns">
         <button id="goBack" type="submit">Inicio</button>
         <button id= "clearBtn">Nuevo mensaje</button>  
       </div>
