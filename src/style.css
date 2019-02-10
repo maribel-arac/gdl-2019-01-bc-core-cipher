@@ -5,27 +5,28 @@
 h1{
 	font-family: 'Shadows Into Light', cursive;
 	text-align: center;
-	font-size: 95px;
-	color: #E65C46;
-	font-weight: bold;
+	font-size: 100px;
+	color: #F55B18;
 }
 
 h3, h2 {
-	font-size: 23px;
-	font-style: oblique;
-	padding-left: 155px;
+	font-size: 26px;
+	padding-left: 148px;
 }
 
-p, li {
+p, li { 
 	font-family: 'Neucha', cursive;
 	color: #0455B6;
-	font-size: 24px;
-	padding-left: 155px;
+	font-size: 25px;
+	padding-left: 155px; }
+
+h3 {
+	font-style: oblique;
+	color: 
 }
 
-
 h4 {
-	font-size: 57px;
+	font-size: 50px;
 	text-align: center;
 	color: #E65C46;
 	font-family: 'Neucha', cursive;
@@ -37,27 +38,30 @@ h5 {
 	font-size: 35px;
 	padding-left: 155px;
 }
-.size {
-	width: 30px;
-}
 
 body {
 font-family: 'Source Sans Pro', sans-serif;
 }
 
 #background{
+	z-index: -1;
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 100%;
-	height: 100%;
+	height: 110%;
 	opacity: 0.3;
 }
 
 #offset {
 	width: 5%;
-	height: 10%;
-	font-size: 18px;
+	height: 5%;
+	font-size: 15px;
+}
+
+#word {
+	width: 20%;
+	height: 50%;
 }
 
 .buttons {
@@ -77,7 +81,7 @@ font-family: 'Source Sans Pro', sans-serif;
 
 #clearBtn {
 	position: absolute;
-	bottom: 60px;
+	bottom: 45px;
 	right: 60px;
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 22px;
@@ -85,11 +89,10 @@ font-family: 'Source Sans Pro', sans-serif;
 	border: 1px dotted black;
 	border-radius: 25px;
 }
-
 #goBack {
 	position: absolute;
-	bottom: 60px;
-	left: 170px;
+	bottom: 45px;
+	left: 180px;
 	font-family: 'Shadows Into Light', cursive;
 	font-size: 22px;
 	background-color: #37C104;
@@ -113,22 +116,21 @@ font-family: 'Source Sans Pro', sans-serif;
 	border-radius: 25px;
 }
 
-#word, .word {
-	width: 200px;
-	height: 50px;
+#word {
+	width: 230px;
+	height: 130px;
 	font-size: 15px;
-	bottom: 20%;
 	position: absolute;
-	padding-left: 185px;
+	bottom: 27%;
 }
 
 #text {
-	width: 200px;
-	height: 50px;
+	width: 230px;
+	height: 130px;
 	font-size: 15px;
 	position: absolute;
 	left: 50%;
-	bottom: 20%;
+	bottom: 27%;
 }
 
 .clearBtn {
@@ -136,4 +138,3 @@ font-family: 'Source Sans Pro', sans-serif;
   font-size: 18px;
   margin-right: 200px;
 }
-
