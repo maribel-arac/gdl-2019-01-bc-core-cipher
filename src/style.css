@@ -119,15 +119,15 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 #word {
-	width: 230px;
-	height: 130px;
+	width: 200px;
+	height: 100px;
 	position: absolute;
 	bottom: 20%;
 }
 
 #text {
-	width: 230px;
-	height: 130px;
+	width: 200px;
+	height: 100px;
 	position: absolute;
 	left: 50%;
 	bottom: 20%;
