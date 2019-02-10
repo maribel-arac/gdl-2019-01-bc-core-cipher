@@ -114,8 +114,8 @@ font-family: 'Source Sans Pro', sans-serif;
 }
 
 #word, .word {
-	width: 30%;
-	height: 30%;
+	width: 200px;
+	height: 50px;
 	font-size: 15px;
 	bottom: 20%;
 	position: absolute;
